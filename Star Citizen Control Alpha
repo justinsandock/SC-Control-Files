@@ -1,0 +1,15 @@
+<ActionMaps version="1">
+
+ <CustomisationUIHeader label="xml_Newb" description="no_idea_whatIamDoing" image="">
+  <devices>
+    <keyboard instance="1" />
+    <joystick instance="1" />
+    <joystick instance="2" />
+    <joystick instance="3" />
+  </devices>
+ </CustomisationUIHeader>
+
+<actionmap name="spaceship_movement">
+</actionmap>
+
+</ActionMaps>
