@@ -8,25 +8,25 @@
 
 <!-- Customisation Header is used by SC 1.1 to upload mappings in Settings -->
 <CustomisationUIHeader label="Dr. Argon Alpha" description="" image="">
-  <devices>
-   <keyboard instance="1"/>
-   <joystick instance="1"/>
-   <joystick instance="2"/>
-   <joystick instance="3"/>
-  </devices>
-  <categories>
-   <category label="@ui_CCSpaceFlight"/>
-  </categories>
+  	<devices>
+   		<keyboard instance="1"/>
+   		<joystick instance="1"/>
+   		<joystick instance="2"/>
+   		<joystick instance="3"/>
+  	</devices>
+  	<categories>
+   		<category label="@ui_CCSpaceFlight"/>
+  	</categories>
  </CustomisationUIHeader>
 
 <!-- Control Device Options -->
- <options type="keyboard" instance="1"/>
- <options type="joystick" instance="1"/>
- <options type="joystick" instance="2"/>
-<!-- This might inverse the Throttle -->
- <options type="joystick" instance="3">
- <flight_move_strafe_longitudinal invert="1"/>
- </options>
+ 	<options type="keyboard" instance="1"/>
+ 	<options type="joystick" instance="1"/>
+ 	<options type="joystick" instance="2"/>
+	<options type="joystick" instance="3">
+ 		<!-- This might inverse the Throttle -->
+ 		<flight_move_strafe_longitudinal invert="1"/>
+ 	</options>
 
 
 <actionmap name="spaceship_general">
