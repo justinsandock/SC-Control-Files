@@ -1,15 +1,64 @@
-<ActionMaps version="1">
+<!-- 4/6/2015 5:46:00 PM - SC Joystick Mapping -->
+<!-- Justin Sandock AKA Dr. Argon -->
+<ActionMaps version="1" 
+	js1="CH Control Manager Device 1" js1G="4d78fd40-ecd9-11e3-8001-444553540000" 
+	js2="Saitek Pro Flight X-55 Rhino Stick" js2G="cbe75670-d7d1-11e4-8002-444553540000" 
+	js3="Saitek Pro Flight X-55 Rhino Throttle" js3G="993f32b0-d7d1-11e4-8001-444553540000" 
+>
 
- <CustomisationUIHeader label="xml_Newb" description="no_idea_whatIamDoing" image="">
+<!-- Customisation Header is used by SC 1.1 to upload mappings in Settings -->
+<CustomisationUIHeader label="Dr. Argon Alpha" description="" image="">
   <devices>
-    <keyboard instance="1" />
-    <joystick instance="1" />
-    <joystick instance="2" />
-    <joystick instance="3" />
+   <keyboard instance="1"/>
+   <joystick instance="1"/>
+   <joystick instance="2"/>
+   <joystick instance="3"/>
   </devices>
+  <categories>
+   <category label="@ui_CCSpaceFlight"/>
+  </categories>
  </CustomisationUIHeader>
+ <options type="keyboard" instance="1"/>
+ <options type="joystick" instance="1"/>
+ <options type="joystick" instance="2"/>
+ <options type="joystick" instance="3"/>
 
-<actionmap name="spaceship_movement">
-</actionmap>
+
+	<actionmap name="spaceship_movement">
+
+<!-- Pedal Controls -->
+		<action name="v_roll">
+			<rebind device="joystick" input="js1_z" />
+		</action>
+		<action name="v_strafe_forward">
+			<rebind device="joystick" input="js1_y" />
+		</action>
+		<action name="v_strafe_back">
+			<rebind device="joystick" input="js1_x" />
+		</action>
+	
+	<!-- Stick Controls -->	
+		<action name="v_pitch">
+			<rebind device="joystick" input="js2_y" />
+		</action>
+		<action name="v_yaw">
+			<rebind device="joystick" input="js2_x" />
+		</action>
+
+<-- Throttle Controls -->	
+		<action name="v_throttle_rel">
+			<rebind device="joystick" input="js3_x" />
+		</action>
+	
+	</actionmap>
+
+
+
+
+
+
+
+
+
 
 </ActionMaps>
