@@ -141,7 +141,6 @@
    			<rebind device="keyboard" input="n"/>
    			<rebind device="joystick" input=" "/>
   		</action>
-
 <!-- Pedal Controls -->
 		<action name="v_roll">
 			<rebind device="joystick" input="js1_z" />
@@ -152,15 +151,13 @@
 		<action name="v_strafe_back">
 			<rebind device="joystick" input="js1_x" />
 		</action>
-	
-	<!-- Stick Controls -->	
+<!-- Stick Controls -->	
 		<action name="v_pitch">
 			<rebind device="joystick" input="js2_y" />
 		</action>
 		<action name="v_yaw">
 			<rebind device="joystick" input="js2_x" />
 		</action>
-
 <-- Throttle Controls -->	
 		<action name="v_throttle_abs">
 			<rebind device="joystick" input="js3_x" />
@@ -172,6 +169,7 @@
 		   	<rebind device="joystick" input="js2_button11"/>
 		</action>
 	</actionmap>
+
 
  <actionmap name="spaceship_targeting">
   		<action name="v_toggle_weapon_gimbal_lock">
