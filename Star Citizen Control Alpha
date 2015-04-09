@@ -1,13 +1,13 @@
 <!-- 4/6/2015 5:46:00 PM - SC Joystick Mapping -->
 <!-- Justin Sandock AKA Dr. Argon -->
-<ActionMaps version="1" 
-	js1="CH Control Manager Device 1" js1G="4d78fd40-ecd9-11e3-8001-444553540000" 
-	js2="Saitek Pro Flight X-55 Rhino Stick" js2G="cbe75670-d7d1-11e4-8002-444553540000" 
-	js3="Saitek Pro Flight X-55 Rhino Throttle" js3G="993f32b0-d7d1-11e4-8001-444553540000" 
->
+<ActionMaps version="1"> 
+<!	js1="CH Control Manager Device 1" js1G="4d78fd40-ecd9-11e3-8001-444553540000" 
+<!	js2="Saitek Pro Flight X-55 Rhino Stick" js2G="cbe75670-d7d1-11e4-8002-444553540000" 
+<!	js3="Saitek Pro Flight X-55 Rhino Throttle" js3G="993f32b0-d7d1-11e4-8001-444553540000" 
+
 
 <!-- Customisation Header is used by SC 1.1 to upload mappings in Settings -->
-<CustomisationUIHeader label="Dr. Argon Alpha" description="" image="">
+<CustomisationUIHeader label="Dr_Argon_Alpha" description="" image="">
   	<devices>
    		<keyboard instance="1"/>
    		<joystick instance="1"/>
