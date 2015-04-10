@@ -1,0 +1,505 @@
+<!-- 4/9/2015 22:58:00 PM - SC Joystick Mapping -->
+<!-- Justin Sandock AKA Dr. Argon -->
+<ActionMaps version="1" 
+    	js1="CH Control Manager Device 1" js1G="4d78fd40-ecd9-11e3-8001-444553540000" 
+  	  js2="Saitek Pro Flight X-55 Rhino Throttle" js3G="993f32b0-d7d1-11e4-8001-444553540000" 
+  	  js3="Saitek Pro Flight X-55 Rhino Stick" js2G="cbe75670-d7d1-11e4-8002-444553540000" 
+>
+
+<CustomisationUIHeader label="Dr_Argon_Zeta" description="" image="">
+  	<devices>
+   		<keyboard instance="1"/>
+   		<joystick instance="1"/>
+   		<joystick instance="2"/>
+   		<joystick instance="3"/>
+  	</devices>
+  	<categories>
+   		<category label="@ui_CCSpaceFlight"/>
+  	</categories>
+ </CustomisationUIHeader>
+
+ 	<options type="keyboard" instance="1"/>
+ 	<options type="joystick" instance="1"/>
+ 	<options type="joystick" instance="2"/>
+	<options type="joystick" instance="3">
+ 		<!-- This might inverse the Throttle? -->
+ 		<flight_move_strafe_longitudinal invert="1"/>
+ 	</options>
+
+<actionmap name="spaceship_general">
+		<action name="v_exit">
+			<rebind device="keyboard" input="ralt+f" />
+		</action>
+		<action name="v_eject">
+			<rebind device="keyboard" input="ralt+l" />
+		</action>
+		<action name="v_self_destruct">
+			<rebind device="keyboard" input="ralt+backspace" />
+		</action>
+		<action name="v_toggle_cabin_lights">
+			<rebind device="keyboard" input="lctrl+o" />
+		</action>
+		<action name="v_toggle_running_lights">
+			<rebind device="keyboard" input="o" />
+		</action>
+</actionmap>
+
+<actionmap name="spaceship_view">
+<!--Throttle Definition -->
+  	<action name="v_view_look_behind">
+   		<rebind device="joystick" input="js2_button35"/>
+  	</action>
+  	<action name="v_view_dynamic_focus_in">
+   		<rebind device="joystick" input="js2_button30"/>
+  	</action>
+  	<action name="v_view_dynamic_focus_out">
+   		<rebind device="joystick" input="js2_button31"/>
+  	</action>
+  	<action name="v_view_pitch_down">
+   		<rebind device="joystick" input=" "/>
+  	</action>
+  	<action name="v_view_pitch_up">
+   		<rebind device="joystick" input=" "/>
+  	</action>
+  	<action name="v_view_yaw_right">
+   		<rebind device="joystick" input=" "/>
+  	</action>
+  	<action name="v_view_yaw_left">
+   		<rebind device="joystick" input=" "/>
+  	</action>
+  	<action name="v_view_zoom_out">
+   		<rebind device="joystick" input="js2_button31"/>
+  	</action>
+  	<action name="v_view_zoom_in">
+   		<rebind device="joystick" input="js2_button30"/>
+  	</action>
+  	<action name="v_view_cycle_fwd">
+   		<rebind device="joystick" input="js2_button2"/>
+  	</action>
+  	<action name="v_view_mode">
+   		<rebind device="joystick" input=" "/>
+  	</action>
+<!-- Keyboard Definition -->  	
+		<action name="v_view_yaw_left">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_view_yaw_right">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_view_pitch_up">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_view_pitch_down">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_view_cycle_fwd">
+			<rebind device="keyboard" input="insert" />
+		</action>
+		<action name="v_view_cycle_internal_fwd">
+			<rebind device="keyboard" input="home" />
+		</action>
+		<action name="v_view_option">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_view_mode">
+			<rebind device="keyboard" input="pgup" />
+		</action>
+		<action name="v_view_zoom_in">
+			<rebind device="keyboard" input="mwheel_up" />
+		</action>
+		<action name="v_view_zoom_out">
+			<rebind device="keyboard" input="mwheel_down" />
+		</action>
+		<action name="v_view_interact">
+			<rebind device="keyboard" input="f" />
+		</action>
+		<action name="v_view_cycle_headlook_mode">
+			<rebind device="keyboard" input="lctrl+tab" />
+		</action>
+		<action name="v_view_look_behind">
+			<rebind device="keyboard" input="period" />
+		</action>
+</actionmap>
+
+<actionmap name="spaceship_movement">
+<!-- Pedal Definitions -->
+		<action name="v_roll">
+			<rebind device="joystick" input="js1_z" />
+		</action>
+		<action name="v_strafe_forward">
+			<rebind device="joystick" input="js1_y" />
+		</action>
+		<action name="v_strafe_back">
+			<rebind device="joystick" input="js1_x" />
+		</action>
+<!-- Stick Definitions -->	
+		<action name="v_pitch">
+			<rebind device="joystick" input="js3_y" />
+		</action>
+		<action name="v_yaw">
+			<rebind device="joystick" input="js3_x" />
+		</action>
+<-- Throttle Definitions -->	
+		<action name="v_throttle_abs">
+			<rebind device="joystick" input="js2_x" />
+	 	</action>
+<!-- Keyboard Definitions -->
+		<action name="v_pitch_up">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_pitch_down">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_yaw_left">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_yaw_right">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_roll_mouse">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_toggle_yaw_roll_swap">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_throttle_up">
+			<rebind device="keyboard" input="w" />
+		</action>
+		<action name="v_throttle_down">
+			<rebind device="keyboard" input="s" />
+		</action>
+		<action name="v_throttle_rel">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_brake">
+			<rebind device="keyboard" input="space" />
+		</action>
+		<action name="v_target_match_vel">
+			<rebind device="keyboard" input="ralt+v" />
+		</action>
+		<action name="v_ifcs_toggle_vector_decoupling">
+			<rebind device="keyboard" input="capslock" />
+		</action>
+		<action name="v_strafe_up">
+			<rebind device="keyboard" input="r" />
+		</action>
+		<action name="v_strafe_down">
+			<rebind device="keyboard" input="f" />
+		</action>
+		<action name="v_strafe_left">
+			<rebind device="keyboard" input="q" />
+		</action>
+		<action name="v_strafe_right">
+			<rebind device="keyboard" input="e" />
+		</action>
+		<action name="v_strafe_forward">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_strafe_back">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_ifcs_toggle_safeties">
+			<rebind device="keyboard" input="lctrl+capslock" />
+		</action>
+		<action name="v_ifcs_toggle_gforce_safety">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_ifcs_toggle_comstab">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_decoupled_strafe_up">
+			<rebind device="keyboard" input="r" />
+		</action>
+		<action name="v_decoupled_strafe_down">
+			<rebind device="keyboard" input="f" />
+		</action>
+		<action name="v_decoupled_strafe_left">
+			<rebind device="keyboard" input="q" />
+		</action>
+		<action name="v_decoupled_strafe_right">
+			<rebind device="keyboard" input="e" />
+		</action>
+		<action name="v_decoupled_strafe_forward">
+			<rebind device="keyboard" input="w" />
+		</action>
+		<action name="v_decoupled_strafe_back">
+			<rebind device="keyboard" input="s" />
+		</action>
+		<action name="v_decoupled_yaw_left">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_decoupled_yaw_right">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_decoupled_pitch_up">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_decoupled_pitch_down">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_decoupled_brake">
+			<rebind device="keyboard" input="space" />
+		</action>
+		<action name="v_afterburner">
+			<rebind device="keyboard" input="lshift" />
+		</action>
+		<action name="v_toggle_landing_system">
+			<rebind device="keyboard" input="n" />
+		</action>
+		<action name="v_cycle_landing_mode">
+			<rebind device="keyboard" input="m" />
+		</action>
+		<action name="v_landing_target_lock">
+			<rebind device="keyboard" input="mouse3" />
+		</action>
+</actionmap>
+
+<actionmap name="spaceship_targeting">
+<!-- Unbind Joystick Definitions -->
+  		<action name="v_aim_pitch_down">
+   			<rebind device="joystick" input=" "/>
+  		</action>
+  		<action name="v_aim_pitch_up">
+   			<rebind device="joystick" input=" "/>
+  		</action>
+  		<action name="v_aim_yaw_right">
+   			<rebind device="joystick" input=" "/>
+  		</action>
+  		<action name="v_aim_yaw_left">
+	 		<rebind device="joystick" input=" "/>
+  		</action>
+<!-- Keyboard Definitions -->
+		<action name="v_aim_yaw_left">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_aim_yaw_right">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_aim_pitch_up">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_aim_pitch_down">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_couple_aim_to_move">
+			<rebind device="keyboard" input="ralt+m" />
+		</action>
+		<action name="v_toggle_weapon_gimbal_lock">
+			<rebind device="keyboard" input="ralt+l" />
+		</action>
+		<action name="v_target_reticle_focus">
+			<rebind device="keyboard" input="v" />
+		</action>
+		<action name="v_target_cycle_all_fwd">
+			<rebind device="keyboard" input="y" />
+		</action>
+		<action name="v_target_cycle_all_back">
+			<rebind device="keyboard" input="lctrl+y" />
+		</action>
+		<action name="v_target_cycle_friendly_fwd">
+			<rebind device="keyboard" input="h" />
+		</action>
+		<action name="v_target_cycle_friendly_back">
+			<rebind device="keyboard" input="lctrl+h" />
+		</action>
+		<action name="v_target_toggle_pinned_focused">
+			<rebind device="keyboard" input="g" />
+		</action>
+		<action name="v_target_cycle_pinned_fwd">
+			<rebind device="keyboard" input="u" />
+		</action>
+		<action name="v_target_cycle_pinned_back">
+			<rebind device="keyboard" input=" " />
+		</action>
+		<action name="v_target_missile_lock_focused">
+			<rebind device="keyboard" input="mouse3" />
+		</action>
+		<action name="v_target_cycle_hostile_fwd">
+			<rebind device="keyboard" input="t" />
+		</action>
+		<action name="v_target_cycle_hostile_back">
+			<rebind device="keyboard" input="lctrl+t" />
+		</action>
+		<action name="v_target_nearest_hostile">
+			<rebind device="keyboard" input="c" />
+		</action>
+		<action name="v_target_cycle_subsystem_fwd">
+			<rebind device="keyboard" input="b" />
+		</action>
+		<action name="v_target_cycle_subsystem_back">
+			<rebind device="keyboard" input="lctrl+b" />
+		</action>
+		<action name="v_target_head_tracking">
+			<rebind device="keyboard" input="l" />
+		</action>
+</actionmap>
+
+<actionmap name="spaceship_weapons">
+		<action name="v_attack1_group1">
+			<rebind device="keyboard" input="mouse1" />
+		</action>
+		<action name="v_attack1_group2">
+			<rebind device="keyboard" input="mouse2" />
+		</action>
+		<action name="v_attack1_group3">
+			<rebind device="keyboard" input="mouse4" />
+		</action>
+		<action name="v_attack1_group4">
+			<rebind device="keyboard" input="mouse5" />
+		</action>
+</actionmap>
+
+<actionmap name="spaceship_missiles">
+		<action name="v_weapon_launch_missile">
+			<rebind device="keyboard" input="mouse3" />
+		</action>
+</actionmap>
+
+<actionmap name="spaceship_defensive">
+		<action name="v_weapon_launch_countermeasure">
+			<rebind device="keyboard" input="z" />
+		</action>
+		<action name="v_weapon_cycle_countermeasure_fwd">
+			<rebind device="keyboard" input="x" />
+		</action>
+		<action name="v_shield_raise_level_forward">
+			<rebind device="keyboard" input="np_8" />
+		</action>
+		<action name="v_shield_raise_level_back">
+			<rebind device="keyboard" input="np_2" />
+		</action>
+		<action name="v_shield_raise_level_left">
+			<rebind device="keyboard" input="np_4" />
+		</action>
+		<action name="v_shield_raise_level_right">
+			<rebind device="keyboard" input="np_6" />
+		</action>
+		<action name="v_shield_raise_level_up">
+			<rebind device="keyboard" input="np_9" />
+		</action>
+		<action name="v_shield_raise_level_down">
+			<rebind device="keyboard" input="np_7" />
+		</action>
+		<action name="v_shield_reset_level">
+			<rebind device="keyboard" input="np_5" />
+		</action>
+		<action name="v_shield_boost_recharge">
+			<rebind device="keyboard" input="ralt+c" />
+		</action>
+		<action name="v_shield_cycle_presets_fwd">
+			<rebind device="keyboard" input="v" />
+		</action>
+		<action name="v_shield_cycle_presets_back">
+			<rebind device="keyboard" input="lctrl+v" />
+		</action>
+	</actionmap>
+
+<actionmap name="spaceship_auto_weapons">
+		<action name="v_weapon_toggle_ai">
+			<rebind device="keyboard" input="slash" />
+		</action>
+</actionmap>
+
+<actionmap name="spaceship_radar">
+		<action name="v_radar_cycle_zoom_fwd">
+			<rebind device="keyboard" input="comma" />
+		</action>
+		<action name="v_radar_cycle_focus_fwd">
+			<rebind device="keyboard" input="j" />
+		</action>
+		<action name="v_radar_cycle_focus_back">
+			<rebind device="keyboard" input="k" />
+		</action>
+</actionmap>
+
+<actionmap name="spaceship_hud">
+		<action name="v_hud_cycle_mode_fwd">
+			<rebind device="keyboard" input="apostrophe" />
+		</action>
+		<action name="v_hud_cycle_mode_back">
+			<rebind device="keyboard" input="semicolon" />
+		</action>
+		<action name="v_hud_open_tab1">
+			<rebind device="keyboard" input="f1" />
+		</action>
+		<action name="v_hud_open_tab2">
+			<rebind device="keyboard" input="f2" />
+		</action>
+		<action name="v_hud_open_tab3">
+			<rebind device="keyboard" input="f3" />
+		</action>
+		<action name="v_hud_open_tab4">
+			<rebind device="keyboard" input="f4" />
+		</action>
+		<action name="v_hud_open_tab5">
+			<rebind device="keyboard" input="f5" />
+		</action>
+		<action name="v_hud_open_tab6">
+			<rebind device="keyboard" input="f6" />
+		</action>
+		<action name="v_hud_open_tab7">
+			<rebind device="keyboard" input="f7" />
+		</action>
+		<action name="v_hud_open_tab8">
+			<rebind device="keyboard" input="f8" />
+		</action>
+		<action name="v_hud_open_tab9">
+			<rebind device="keyboard" input="f9" />
+		</action>
+		<action name="v_hud_open_tab10">
+			<rebind device="keyboard" input="f10" />
+		</action>
+		<action name="v_hud_open_scoreboard">
+			<rebind device="keyboard" input="tab" />
+		</action>
+		<action name="v_hud_toggle_maximised">
+			<rebind device="keyboard" input="f11" />
+		</action>
+		<action name="v_hud_interact_toggle">
+			<rebind device="keyboard" input="home" />
+		</action>
+		<action name="v_hud_confirm">
+			<rebind device="keyboard" input="enter" />
+		</action>
+		<action name="v_hud_cancel">
+			<rebind device="keyboard" input="rctrl" />
+		</action>
+		<action name="v_hud_left_panel_up">
+			<rebind device="keyboard" input="up" />
+		</action>
+		<action name="v_hud_left_panel_down">
+			<rebind device="keyboard" input="down" />
+		</action>
+		<action name="v_hud_left_panel_left">
+			<rebind device="keyboard" input="left" />
+		</action>
+		<action name="v_hud_left_panel_right">
+			<rebind device="keyboard" input="right" />
+		</action>
+		<action name="v_comm_open_chat">
+			<rebind device="keyboard" input="backslash" />
+		</action>
+		<action name="v_comm_show_chat">
+			<rebind device="keyboard" input="equals" />
+		</action>
+		<action name="v_comm_open_precanned">
+			<rebind device="keyboard" input="lctrl+backslash" />
+		</action>
+</actionmap>
+
+<actionmap name="IFCS_controls">
+		<action name="v_IFCS_A">
+			<rebind device="keyboard" input="rctrl+a" />
+		</action>
+		<action name="v_IFCS_B">
+			<rebind device="keyboard" input="rctrl+b" />
+		</action>
+		<action name="v_IFCS_X">
+			<rebind device="keyboard" input="rctrl+x" />
+		</action>
+		<action name="v_IFCS_Y">
+			<rebind device="keyboard" input="rctrl+y" />
+		</action>
+</actionmap>
+
+</ActionMaps>
