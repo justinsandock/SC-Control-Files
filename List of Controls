@@ -1,0 +1,74 @@
+Master list of controls for Dr Argon Control Scheme
+Star Citizen 1.1 April 9th, 2015
+
+ i_DumpDeviceInformation to get an idea of what is connected where. And pp_ResortDevices to quickly exchange mappings
+ 
+Controls not yet mapped
+  Spaceship View
+    View Pitch Down
+    View Pitch Up
+    View Yaw Right
+    View Yaw Left
+    View Mode
+    
+
+Controls mapped to mouse or analog input not keyboard
+    Spaceship General
+        Look Behind         Throttle Button 35
+        
+    Spaceship Views
+        Dynamic Focus In    Thottle Button 30 
+        Dynamic Focus Out   Throttle Button 31
+        View Cycl For       Throttle Button 2
+ 
+    Spaceship Movement
+        Yaw                 Stick X-Axis
+        Pitch               Stick Y-Axis
+        Roll                Pedals Z-Axis
+        Throttle            Throttle X-Axis
+        Land Targ Lock      Stick Button 3
+        Land Targ Lock      Mouse Button 3
+    Do I want to map these or use keyboard controls?
+        Strafe For          Pedals Y-Axis
+        Strafe Aft          Pedals X-Axis
+        Decpl Strafe For    Pedals Y-Axis
+        Decpl Strafe Aft    Pedals X-Axis
+ 
+ 
+Controls mapped to keyboard
+    Spaceship General
+        Exit Ship           ralt+f
+        Eject from Ship     ralt+l
+        Self Destruct       ralt+backspace
+        Reset Power         0
+        Running Lights      ralt+r
+        Cabin Lights        ralt+c
+        
+    Spaceship View
+    
+    Spaceship Movement
+        Brake               Space
+        Strafe Up           r
+        Strafe Down         f
+        Strafe Left         q
+        Strafe Rigth        e
+        Decpl Strafe Up     r
+        Decpl Strafe Down   f
+        Decpl Strafe Left   q
+        Decpl Strafe Right  e
+        Decpl Strafe Fore   w
+        Decple Strafe Aft   s
+        Targe match Vel     ralt+m
+        Decpl Brake         space
+        Cycle Land Mode     m
+        Togg Land System    n
+        G-Force             Cntrl+CapLock
+        ComStab             CapLock
+        
+        
+      Spaceship Targeting
+        
+        
+        
+    
+    
