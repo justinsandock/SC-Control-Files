@@ -4,12 +4,15 @@ Star Citizen 1.1 April 9th, 2015
  i_DumpDeviceInformation to get an idea of what is connected where. And pp_ResortDevices to quickly exchange mappings
  
 Controls not yet mapped
-  Spaceship View
-    View Pitch Down
-    View Pitch Up
-    View Yaw Right
-    View Yaw Left
-    View Mode
+   Spaceship View
+      View Pitch Down
+      View Pitch Up
+      View Yaw Right
+      View Yaw Left
+      View Mode
+    
+    Spaceship Targeting
+      
     
 
 Controls mapped to mouse or analog input not keyboard
@@ -41,10 +44,16 @@ Controls mapped to keyboard
         Eject from Ship     ralt+l
         Self Destruct       ralt+backspace
         Reset Power         0
-        Running Lights      ralt+r
-        Cabin Lights        ralt+c
+        Running Lights      o
+        Cabin Lights        ralt+o
         
     Spaceship View
+        View Cyc Forward    insert
+        V Cyc Intr For      home
+        View Mode           pgup
+        View Interact       f
+        View Cyc Head Mode  lctrl+tab
+        View Look Behind    .
     
     Spaceship Movement
         Brake               Space
@@ -58,17 +67,85 @@ Controls mapped to keyboard
         Decpl Strafe Right  e
         Decpl Strafe Fore   w
         Decple Strafe Aft   s
-        Targe match Vel     ralt+m
+        Targe match Vel     ralt+v
         Decpl Brake         space
+        Afterburn           lshft
         Cycle Land Mode     m
         Togg Land System    n
-        G-Force             Cntrl+CapLock
-        ComStab             CapLock
+        Togg Safeties       LCntrl+CapLock
+        Togg GForce         ralt+g
+        Togg ComStab        ralt+c
+        Decouple            CapLock
+        Land Targ Lock      mouse3
         
+    Spaceship Targeting
+        Gimbal Lock         was lalt make lalt+l
+        Look Ahead Mode     ralt+m
+        Target Reticle Foc  v
+        Target All Forward  y
+        Target All Aft      lctrl+y
+        Cyc Friend Forward  h
+        Cyc Friend Back     lctrl_h
+        Togg Pinned Foc     g
+        Cyc Pinned Forward  u
+        Cyc Hostile Forware t
+        Cyc Hostile Back    lctrl+t
+        Nearest Hostile     c
+        Cyc Subsys For      b
+        Cyc Subsys Back     lctrl+b
+        Target Head Track   l
         
-      Spaceship Targeting
+    Spaceship Weapons
+        Attack Group 1      mouse1
+        Attack Group 2      mouse2
+        Attack Group3       mouse4
+        Attack Group4       moouse5
+     
+     Spaceship missiles
+        Launch Missile      mouse3
         
+     Spaceship Defensive
+        Launch CounterM    z
+        Cycle CounterM     x
+        Shield Foreward    NumP 8
+        Shield Back        NumP 2
+        Shield Left        NumP 4
+        Shield Right       NumP 6
+        Sheild Upper       NumP 9
+        Shield Bottom      NumP 7
+        Shield Reset Level NumP 5
+        Sheild Boost Rec   ralt+c
+        Shield Preset For  v
+        Shield Preset back lctrl+v
         
+     Spaceship Auto Weapon
+        Toggle AI          /
+     
+     Spaceship Power
+        Focus Group 1      1
+        Focus Group 2      2
+        Focus Group 3      3
         
-    
+     Spaceship HUD
+        HUD Cyc Foreward   '
+        HUD Cyc Back       ;
+        HUD Tab1-10        F1-F10
+        HUD Open ScoreB    tab
+        HUD Toggle Max     F11
+        HUD Interact       home
+        HUD Confirm        enter
+        HUD cancel         rctrl
+        HUD left pane up   up
+        HUD left pane down down
+        HUD left pane left left
+        HUD left pane right right
+        Comm Open Chat     \
+        Come Show Chat     =
+        Comm Open Precan   lctrl+\
+        
+     IFCS Controls
+        IFCS A             rctrl+a
+        IFCS B             rctrl+b
+        IFCS X             rctrl+x
+        IFCS Y             rctrl+y
     
