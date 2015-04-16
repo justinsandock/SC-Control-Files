@@ -6,7 +6,7 @@
   	  js3="Saitek Pro Flight X-55 Rhino Stick" js2G="cbe75670-d7d1-11e4-8002-444553540000" 
 >
 
-<CustomisationUIHeader label="Dr_Argon_Zeta" description="" image="">
+<CustomisationUIHeader label="Dr_Argon_Eta" description="" image="">
   	<devices>
    		<keyboard instance="1"/>
    		<joystick instance="1"/>
