@@ -132,8 +132,8 @@
 		<action name="v_strafe_back">
 			<rebind device="joystick" input="js1_x" />
 		</action>
-		<action name="v_decoupled_roll_left">
-			<rebind device="keyboard" input="js1_z" />
+		<action name="v_decoupled_roll">
+			<rebind device="joystick" input="js1_z" />
 		</action>
 <!-- Stick Definitions -->	
 		<action name="v_pitch">
@@ -142,7 +142,7 @@
 		<action name="v_yaw">
 			<rebind device="joystick" input="js3_x" />
 		</action>
-		<action name="v_decoupled_pitch_">
+		<action name="v_decoupled_pitch">
 			<rebind device="keyboard" input="js3_y" />
 		</action>
 		<action name="v_decoupled_yaw">
