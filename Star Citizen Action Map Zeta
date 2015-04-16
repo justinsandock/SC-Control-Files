@@ -143,10 +143,10 @@
 			<rebind device="joystick" input="js3_x" />
 		</action>
 		<action name="v_decoupled_pitch">
-			<rebind device="keyboard" input="js3_y" />
+			<rebind device="joystick" input="js3_y" />
 		</action>
 		<action name="v_decoupled_yaw">
-			<rebind device="keyboard" input="js3_x" />
+			<rebind device="joystick" input="js3_x" />
 		</action>
 <!-- Throttle Definitions -->	
 		<action name="v_throttle_abs">
