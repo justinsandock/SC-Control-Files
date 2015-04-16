@@ -6,7 +6,7 @@
   	  js3="Saitek Pro Flight X-55 Rhino Stick" js2G="cbe75670-d7d1-11e4-8002-444553540000" 
 >
 
-<CustomisationUIHeader label="Dr_Argon_Eta" description="" image="">
+<CustomisationUIHeader label="Dr_Argon_Theta" description="" image="">
   	<devices>
    		<keyboard instance="1"/>
    		<joystick instance="1"/>
@@ -126,15 +126,23 @@
 		<action name="v_roll">
 			<rebind device="joystick" input="js1_z" />
 		</action>
-		<action name="v_strafe_forward">
+<!--		<action name="v_strafe_forward">
 			<rebind device="joystick" input="js1_y" />
 		</action>
 		<action name="v_strafe_back">
 			<rebind device="joystick" input="js1_x" />
 		</action>
+-->
 		<action name="v_decoupled_roll">
 			<rebind device="joystick" input="js1_z" />
 		</action>
+<!--		<action name="v_decouple_strafe_forward">
+			<rebind device="joystick" input="js1_y" />
+		</action>
+		<action name="v_decouple_strafe_back">
+			<rebind device="joystick" input="js1_x" />
+		</action>
+-->
 <!-- Stick Definitions -->	
 		<action name="v_pitch">
 			<rebind device="joystick" input="js3_y" />
