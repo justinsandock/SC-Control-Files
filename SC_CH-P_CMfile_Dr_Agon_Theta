@@ -1,0 +1,35 @@
+// CMS Script File
+//
+//     Game Title: Star Citizen
+//     Written By: Justin Sandock
+//           Date: March 4, 2015
+//
+script
+// Assigns the toe pedals to fore and aft thrust
+// Gives speed boost to full depression
+
+// Defining buttons an unpressed
+CMS.B1 = FALSE ;
+CMS.B2 = FALSE ;
+CMS.B17 = FALSE ;
+CMS.B18 = FALSE ;
+
+// Right Toe Pedal
+  IF ([JS1.A2 > 50] AND [JS1.A2 <150]) THEN // Slight depress
+    CMS.B1 = TRUE ; // thrust forward on
+    CMS.B17 = FALSE ; // thrust with boost off
+  ELSE IF ([JS1.A2 > 150]) THEN // Pedal fully depressed
+    CMS.B17 = TRUE ; // thrust with boost on
+  ENDIF
+  ENDIF
+
+// Left Toe Pedal
+  IF ([JS1.A1 > 50] AND [JS1.A1 <150]) THEN // Slight depress
+    CMS.B2 = TRUE ; // thrust aft on
+    CMS.B18 = FALSE ; // thrust with boost off
+  ELSE IF ([JS1.A1 > 150]) THEN // Pedal fully depressed
+    CMS.B18 = TRUE ; // thrust with boost on
+  ENDIF
+  ENDIF
+  
+endScript
