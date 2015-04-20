@@ -1,0 +1,982 @@
+[profile=Dr_Argon_Theta version=0x00000005
+  [controllers
+    [controller=ce42e445-968c-4a74-bc30-1b3a6b461ae5 group='X-55 Control System'
+      [member=96130127-8156-467c-959a-6129d94f8d48 name=Stick shortname=Stick]
+      [controls
+        [button=0x00090001 name=Trigger]
+        [button=0x00090002 name=A]
+        [button=0x00090003 name=B]
+        [button=0x00090004 name=C]
+        [button=0x00090005 name=D]
+        [button=0x00090006 name=Pinky]
+        [hat=0x00090007 name=H1 way=5]
+        [hat=0x0009000B name=H2 way=5]
+        [slider name=Mode
+          [button=0x0009000F name='Mode 1' latchable=false]
+          [button=0x00090010 name='Mode 2' latchable=false]
+          [button=0x00090011 name='Mode 3' latchable=false]]
+        [hat=0x00010039 name=POV way=5]
+        [axis=0x00010030 name='X Axis']
+        [axis=0x00010031 name='Y Axis']
+        [axis=0x00010035 name=Twist]]
+      [shifts
+        [shift=346dbae3-9684-4b7d-9943-887e7a32d02c fallback=346dbae3-9684-4b7d-9943-887e7a32d02c name=Mode1
+          [selectionset
+            [buttoncombo
+              [buttonhid=0x0009000F]]]
+          [assignments
+            [button=0x00090001 role=bands
+              [bands
+                [band=1 command=f4ff4aa9-8b64-4230-b629-871ca4d09be0]]]
+            [button=0x00090002 role=bands
+              [bands
+                [band=1 command=8aa7d953-f972-47b8-839f-a89119b90f08]]]
+            [button=0x00090003 role=bands
+              [bands
+                [band=1 command=ec9cf433-7937-45d6-9b6e-350f299e9877]]]
+            [button=0x00090004 role=bands
+              [bands
+                [band=1 command=4c96c051-a1d4-47b4-a36e-f2efc6e0e5fd]]]
+            [button=0x00090005 role=bands
+              [bands
+                [band=1 command=5cc541db-845b-4b09-93b5-4ac1c109345b]]]
+            [button=0x00090006 role=bands
+              [bands
+                [band=1 command=a9b39029-597f-4126-8e40-56b00633286d]]]
+            [hat=0x00090007 role=bands
+              [bands
+                [band=1 command=6772267a-3869-4906-bda2-007f4943c6dd]
+                [band=3 command=0bd1dd26-9ebd-43a5-b59b-74858343f672]
+                [band=5 command=fa550863-138e-45ee-a5b0-38baf6928f9e]
+                [band=7 command=0405aee0-0122-4614-b2d1-0a2092e3c26f]]]
+            [hat=0x0009000B role=bands
+              [bands
+                [band=1 command=dc2dafd0-b2ba-4ddc-b5ee-cb4cf6df6272]
+                [band=3 command=48929589-c361-49ff-87ec-484cd0475648]
+                [band=5 command=d6135397-fc9c-42a4-8ec3-2cd16af7283d]
+                [band=7 command=1836e13a-b42b-44fa-9187-e70b17efbbde]]]
+            [hat=0x00010039 role=unprogrammed
+              [bands
+                [band]
+                [band=1]
+                [band=2 command=77bcce62-fbc2-463e-bfc9-00d7d43d57a8]
+                [band=3]
+                [band=4 command=23b32fd4-675b-45c6-aa58-109bd73e0647]
+                [band=5]
+                [band=6 command=52f418d4-62a6-47a9-9c6e-f03d576320c9]
+                [band=7]
+                [band=8 command=f4018f04-254e-4c55-b248-26180a85e474]]]
+            [axis=0x00010035 role=unprogrammed]]]
+        [shift=c5d5facc-3147-4209-8bee-ea0864f09c02 fallback=346dbae3-9684-4b7d-9943-887e7a32d02c name=Mode2
+          [selectionset
+            [buttoncombo
+              [buttonhid=0x00090010]]]
+          [assignments
+            [button=0x00090001
+              [bands
+                [band=1 command=59d14799-5e27-4d28-8e12-6921a96a1d0f]]]
+            [button=0x00090002
+              [bands
+                [band=1 command=1e9f3396-5c1d-4750-890e-24802204e6de]]]
+            [button=0x00090003
+              [bands
+                [band=1 command=9346dcd5-9bae-4229-9c98-bb1e4e389330]]]
+            [button=0x00090004
+              [bands
+                [band=1 command=3b942845-38b3-4136-9af6-c10b637fedd0]]]]]
+        [shift=952c5f2c-9187-4327-9132-32ea022f0d6d fallback=346dbae3-9684-4b7d-9943-887e7a32d02c name=Mode3
+          [selectionset
+            [buttoncombo
+              [buttonhid=0x00090011]]]
+          [assignments
+            [button=0x00090001
+              [bands
+                [band=1 command=f4ff4aa9-8b64-4230-b629-871ca4d09be0]]]
+            [button=0x00090002
+              [bands
+                [band=1 command=53f5af26-1f92-4664-9f40-67cfac9f78ea]]]
+            [button=0x00090003
+              [bands
+                [band=1 command=8d074af1-c2d6-4feb-87d1-dc881d0f0844]]]
+            [button=0x00090004
+              [bands
+                [band=1 command=4c96c051-a1d4-47b4-a36e-f2efc6e0e5fd]]]
+            [button=0x00090005
+              [bands
+                [band=1 command=babd7c6b-c3c4-46e0-acbb-c83376f6ded2]]]
+            [hat=0x00090007 role=bands
+              [bands
+                [band=1]
+                [band=3]
+                [band=5]
+                [band=7]]]
+            [hat=0x0009000B
+              [bands
+                [band=1 command=d6135397-fc9c-42a4-8ec3-2cd16af7283d]
+                [band=3 command=48929589-c361-49ff-87ec-484cd0475648]
+                [band=5 command=dc2dafd0-b2ba-4ddc-b5ee-cb4cf6df6272]
+                [band=7 command=1836e13a-b42b-44fa-9187-e70b17efbbde]]]
+            [hat=0x00010039
+              [bands
+                [band=1 command=a64a5451-e318-41e1-b307-2dd160fbc3a3]
+                [band=3 command=fa550863-138e-45ee-a5b0-38baf6928f9e]
+                [band=5 command=2750f1b6-265b-4df4-b01e-647d919478f1]
+                [band=7 command=c66c8a35-eada-46f8-9d78-ca9d19276483]]]]]]]
+    [controller=8cc2aa25-2b7a-47b9-a9fe-78c1e06e6904 group='X-55 Control System'
+      [member=519801ca-7e40-4576-a5f3-c786cca1e2c2 name=Throttle shortname=Throttle]
+      [controls
+        [button=0x00090001 name=E]
+        [button=0x00090002 name='F Push']
+        [button=0x00090003 name='G Push']
+        [button=0x00090004 name=H]
+        [button=0x00090005 name=I]
+        [button=0x00090006 name='SW 1']
+        [button=0x00090007 name='SW 2']
+        [button=0x00090008 name='SW 3']
+        [button=0x00090009 name='SW 4']
+        [button=0x0009000A name='SW 5']
+        [button=0x0009000B name='SW 6']
+        [button=0x0009000C name='TGL 1 Up']
+        [button=0x0009000D name='TGL 1 Down']
+        [button=0x0009000E name='TGL 2 Up']
+        [button=0x0009000F name='TGL 2 Down']
+        [button=0x00090010 name='TGL 3 Up']
+        [button=0x00090011 name='TGL 3 Down']
+        [button=0x00090012 name='TGL 4 Up']
+        [button=0x00090013 name='TGL 4 Down']
+        [hat=0x00090014 name=H3 way=5]
+        [hat=0x00090018 name=H4]
+        [button=0x0009001C name='K1 Up']
+        [button=0x0009001D name='K1 Down']
+        [button=0x0009001E name='Scroll FWD']
+        [button=0x0009001F name='Scroll BCK']
+        [slider name=Mode
+          [button=0x00090020 name='Mode 1' latchable=false]
+          [button=0x00090021 name='Mode 2' latchable=false]
+          [button=0x00090022 name='Mode 3' latchable=false]]
+        [button=0x00090023 name=SBK]
+        [axis=0x00010030 name='Left Throttle']
+        [axis=0x00010031 name='Right Throttle']
+        [axis=0x00010032 name='Rotary 1']
+        [axis=0x00010033 name='Rotary 2']
+        [axis=0x00010034 name='Rotary 3']
+        [axis=0x00010035 name='Rotary 4']
+        [axis=0x00050024 name='Mouse X Axis']
+        [axis=0x00050026 name='Mouse Y Axis']]
+      [shifts
+        [shift=346dbae3-9684-4b7d-9943-887e7a32d02c fallback=346dbae3-9684-4b7d-9943-887e7a32d02c name=Mode1
+          [selectionset
+            [buttoncombo
+              [buttonhid=0x00090020]]]
+          [assignments
+            [button=0x00090001 role=bands
+              [bands
+                [band=1 command=4ac4e516-4de3-495d-bca7-e8d80e5c5702]]]
+            [button=0x00090002 role=bands
+              [bands
+                [band=1 command=e60558c2-3285-4f2f-a415-d6be610a01ac]]]
+            [button=0x00090003 role=bands
+              [bands
+                [band=1 command=c53009b7-f8b9-4d97-ad87-7f05da926f69]]]
+            [button=0x00090004 role=bands
+              [bands
+                [band=1 command=74a3fc8a-1aa1-4ac9-97fd-0ee6d6295614]]]
+            [button=0x00090005 role=bands
+              [bands
+                [band=1 command=bcc9a3b8-700b-4316-936f-81e4ac1b182e]]]
+            [button=0x00090006 role=bands
+              [bands
+                [band=1 command=adda3422-ae52-450c-936b-c74480b9f226]]]
+            [button=0x00090007 role=bands
+              [bands
+                [band=1 command=f9064f8e-a0f4-4cd7-9626-b2397d76c9ed]]]
+            [button=0x00090008 role=bands
+              [bands
+                [band=1 command=b60ef9d3-9342-4882-bc42-76b9ff3959d0]]]
+            [button=0x00090009 role=bands
+              [bands
+                [band=1 command=18024a46-0ea5-4294-9cd5-43612fec2f8a]]]
+            [button=0x0009000A role=bands
+              [bands
+                [band=1 command=3779892b-8db2-4d99-aaad-3dbe9abd9ad7]]]
+            [button=0x0009000B role=bands
+              [bands
+                [band=1 command=4805f9f6-3ff9-4467-a429-9ad7140a8c7a]]]
+            [button=0x0009000C role=bands
+              [bands
+                [band=1 command=7f53786f-1a89-4aad-962b-140125549673]]]
+            [button=0x0009000D role=bands
+              [bands
+                [band=1 command=c67df79f-38fe-4ca2-99db-4180ed7edc72]]]
+            [button=0x0009000E role=bands
+              [bands
+                [band=1 command=bf0ce9f4-3f0f-4d83-91f1-e0e19a3e1c37]]]
+            [button=0x0009000F role=bands
+              [bands
+                [band=1 command=05eb7576-b383-4aec-8b18-31b898c8f237]]]
+            [button=0x00090010 role=bands
+              [bands
+                [band=1 command=9f458480-f10c-4a26-877e-242efd8a150c]]]
+            [button=0x00090011 role=bands
+              [bands
+                [band=1 command=e7b5feb4-d392-4f18-a802-7c9272c9932b]]]
+            [button=0x00090012 role=bands
+              [bands
+                [band=1 command=a38be9a5-b5c7-4c67-bd0b-c3839e949697]]]
+            [button=0x00090013 role=bands
+              [bands
+                [band=1 command=b8d00af1-a62b-4fd1-8079-81d7ce8f3abd]]]
+            [hat=0x00090014 role=bands
+              [bands
+                [band=1 command=c835661f-e987-4f65-8202-7f538f4e56c5]
+                [band=2 command=e6996ba0-9a35-423b-8fff-9c1a2a8eddbf]
+                [band=3 command=0f1c6848-788c-49f9-90bf-22edb49a599c]
+                [band=4 command=18f9c1f2-3f48-47b6-a674-29e4f267fced]
+                [band=5 command=4e55b707-0cbd-4364-8664-c8f9c233051c]
+                [band=6 command=18f9c1f2-3f48-47b6-a674-29e4f267fced]
+                [band=7 command=7b26c690-c209-4876-a1ed-a1539bc1447a]
+                [band=8 command=e6996ba0-9a35-423b-8fff-9c1a2a8eddbf]]]
+            [hat=0x00090018 role=bands
+              [bands
+                [band=1 command=c835661f-e987-4f65-8202-7f538f4e56c5]
+                [band=2 command=49976afe-999a-4963-aaa0-451430c6b222]
+                [band=3 command=0f1c6848-788c-49f9-90bf-22edb49a599c]
+                [band=4 command=81750717-ae19-4f36-8a66-22c0e8b69a2b]
+                [band=5 command=4e55b707-0cbd-4364-8664-c8f9c233051c]
+                [band=6 command=7d4184c9-81d3-4718-8560-ea6f66c2c05e]
+                [band=7 command=7b26c690-c209-4876-a1ed-a1539bc1447a]
+                [band=8 command=93969679-8fee-4397-bf97-d19e39eefc6b]]]
+            [button=0x0009001C role=bands
+              [bands
+                [band=1 command=eccdbc49-374d-4b64-932c-dcc66f0f3e4d]]]
+            [button=0x0009001D role=bands
+              [bands
+                [band=1 command=e8267256-a595-4fd3-9911-06d59bf07645]]]
+            [button=0x0009001E role=bands
+              [bands
+                [band=1 command=9daf7997-159d-4595-8332-4cd768472ac7]]]
+            [button=0x0009001F role=bands
+              [bands
+                [band=1 command=6e9cc811-710e-492d-b88f-2c775141fb74]]]
+            [button=0x00090023
+              [bands
+                [band=1 command=8813714c-d37d-4bb4-877c-d20cfcde66a0]]]
+            [axis=0x00010030 role=unprogrammed
+              [bands
+                [band=100]]
+              [mouse-y=15]]
+            [axis=0x00010032 role=bands
+              [bands
+                [band=33 command=e6996ba0-9a35-423b-8fff-9c1a2a8eddbf]
+                [band=67]
+                [band=100 command=18f9c1f2-3f48-47b6-a674-29e4f267fced]]
+              [directional=29 increment=e6996ba0-9a35-423b-8fff-9c1a2a8eddbf decrement=18f9c1f2-3f48-47b6-a674-29e4f267fced]]
+            [axis=0x00010033 role=unprogrammed]
+            [axis=0x00010034 role=directional
+              [directional=29 increment=6259ccfe-d212-4ee0-a0d7-02608e951262 decrement=1d835133-90fb-4a9d-a23d-c29992bade8f]]
+            [axis=0x00010035 role=bands
+              [bands
+                [band=25 command=ee6b94f7-6aa3-44b3-a502-6b329e658bae]
+                [band=50 command=30b1167f-625a-4c25-b6ad-eead80ceb093]
+                [band=75 command=a5eb94a1-370b-4e34-ab0d-aeaec45a45f5]
+                [band=100 command=d38f439b-43fd-4f20-9bc3-d8c5d8b98c1b]]]
+            [axis=0x00050024 role=mouse-x
+              [mouse-x=5]
+              [bands
+                [band=45 command=e8505404-d363-4b77-a559-0c5cacdac33b]
+                [band=55]
+                [band=100 command=c0859ed4-6cd8-4ecb-a9b4-825fbfb94e0a]]]
+            [axis=0x00050026 role=mouse-y
+              [mouse-y=5]
+              [bands
+                [band=45 command=c0859ed4-6cd8-4ecb-a9b4-825fbfb94e0a]
+                [band=55]
+                [band=100 command=e8505404-d363-4b77-a559-0c5cacdac33b]]
+              [directional=29 increment=c0859ed4-6cd8-4ecb-a9b4-825fbfb94e0a decrement=e8505404-d363-4b77-a559-0c5cacdac33b]]]]
+        [shift=c5d5facc-3147-4209-8bee-ea0864f09c02 fallback=346dbae3-9684-4b7d-9943-887e7a32d02c name=Mode2
+          [selectionset
+            [buttoncombo
+              [buttonhid=0x00090021]]]
+          [assignments
+            [button=0x00090001
+              [bands
+                [band=1 command=c0aa69e5-7c1e-45cf-92a4-d33c3a28315d]]]
+            [button=0x00090003
+              [bands
+                [band=1 command=e50b23a7-7e8d-4e13-838f-9c309802905f]]]
+            [button=0x00090004 role=bands
+              [bands
+                [band=1 command=da5c8442-2bc8-4a06-bf8d-d250ef7d33c1]]]
+            [button=0x00090006 role=bands
+              [bands
+                [band=1 command=c67df79f-38fe-4ca2-99db-4180ed7edc72]]]
+            [button=0x00090007 role=bands
+              [bands
+                [band=1 command=c67df79f-38fe-4ca2-99db-4180ed7edc72]]]
+            [button=0x00090008 role=bands
+              [bands
+                [band=1 command=d4d637d1-71ff-44a7-8a35-7f05dd0d8a4a]]]
+            [button=0x00090009 role=bands
+              [bands
+                [band=1 command=bf0ce9f4-3f0f-4d83-91f1-e0e19a3e1c37]]]
+            [button=0x0009000A role=bands
+              [bands
+                [band=1 command=7f53786f-1a89-4aad-962b-140125549673]]]
+            [button=0x0009000B role=bands
+              [bands
+                [band=1 command=ec26b7dd-506c-4fab-a93e-98ad180732d0]]]
+            [button=0x0009000C
+              [bands
+                [band=1 command=c67df79f-38fe-4ca2-99db-4180ed7edc72]]]
+            [button=0x0009000D
+              [bands
+                [band=1 command=4a5ecb42-da9d-450f-8c55-827f1f0b8c69]]]
+            [button=0x0009000E role=bands]
+            [hat=0x00090014
+              [bands
+                [band=1 command=5aa3ba28-5284-4de3-b03f-fd6a09224081]
+                [band=3 command=4a1c4829-5346-40bd-b9c5-c9c9524359dd]
+                [band=5 command=ecb2f314-7499-4044-9140-f1280bf62577]
+                [band=7 command=05d4c3c3-213f-48d6-9517-49b46140d753]]]
+            [hat=0x00090018 role=bands
+              [bands
+                [band=1 command=1e9f3396-5c1d-4750-890e-24802204e6de]
+                [band=2 command=ac0a01e9-0c52-413c-ae77-caf50cbe4bec]
+                [band=3 command=381eacc6-3f7e-466c-838a-0ba750f3eb70]
+                [band=4 command=db15fbcc-c63b-42a4-a5bc-8733f2e7eec3]
+                [band=5 command=3054c46d-674a-437f-a6e3-1e8e0871bef0]
+                [band=6 command=f586c8e0-4668-4938-a317-2adfa9b29a67]
+                [band=7 command=4565e3dc-bea7-4443-951b-47089900d5e7]
+                [band=8 command=afd7d190-e791-4222-a19d-014a67520cf8]]]
+            [axis=0x00010033
+              [bands
+                [band=25 command=ee6b94f7-6aa3-44b3-a502-6b329e658bae]
+                [band=50 command=30b1167f-625a-4c25-b6ad-eead80ceb093]
+                [band=75 command=a5eb94a1-370b-4e34-ab0d-aeaec45a45f5]
+                [band=100 command=d38f439b-43fd-4f20-9bc3-d8c5d8b98c1b]]]
+            [axis=0x00050024 role=bands
+              [bands
+                [band=45 command=60454ba6-f3e7-47d3-804f-a3c4798e74e1]
+                [band=55]
+                [band=100 command=48e7606b-e8ed-4e40-ab12-372a39a54843]]]
+            [axis=0x00050026
+              [bands
+                [band=45 command=48e7606b-e8ed-4e40-ab12-372a39a54843]
+                [band=55]
+                [band=100 command=60454ba6-f3e7-47d3-804f-a3c4798e74e1]]]]]
+        [shift=952c5f2c-9187-4327-9132-32ea022f0d6d fallback=346dbae3-9684-4b7d-9943-887e7a32d02c name=Mode3
+          [selectionset
+            [buttoncombo
+              [buttonhid=0x00090022]]]
+          [assignments
+            [button=0x00090001
+              [bands
+                [band=1 command=e8267256-a595-4fd3-9911-06d59bf07645]]]
+            [button=0x00090002 role=bands
+              [bands
+                [band=1 command=c0aa69e5-7c1e-45cf-92a4-d33c3a28315d]]]
+            [button=0x00090003 role=bands
+              [bands
+                [band=1 command=e50b23a7-7e8d-4e13-838f-9c309802905f]]]
+            [button=0x0009000E role=unprogrammed]
+            [button=0x00090010
+              [bands
+                [band=1 command=9a53d189-4d9d-422f-9c18-eb2abfabe948]]]
+            [button=0x00090011
+              [bands
+                [band=1 command=49ee6820-33b8-4062-ad9b-64ec765befb5]]]
+            [hat=0x00090014 role=bands
+              [bands
+                [band=1 command=5aa3ba28-5284-4de3-b03f-fd6a09224081]
+                [band=3 command=4a1c4829-5346-40bd-b9c5-c9c9524359dd]
+                [band=5 command=ecb2f314-7499-4044-9140-f1280bf62577]
+                [band=7 command=05d4c3c3-213f-48d6-9517-49b46140d753]]]
+            [axis=0x00010033 role=bands
+              [bands
+                [band=25 command=ee6b94f7-6aa3-44b3-a502-6b329e658bae]
+                [band=50 command=30b1167f-625a-4c25-b6ad-eead80ceb093]
+                [band=75 command=a5eb94a1-370b-4e34-ab0d-aeaec45a45f5]
+                [band=100 command=d38f439b-43fd-4f20-9bc3-d8c5d8b98c1b]]]]]]]]
+  [commands
+    [actioncommand=8d074af1-c2d6-4feb-87d1-dc881d0f0844 name='Fire Countermeasures'
+      [actionblock
+        [action device=keyboard usage=0x0000001D page=0x00000007 value=0x00000001]]
+      [actionblock type=repeat
+        [action device=keyboard usage=0x0000001D page=0x00000007 value=0x00000001]]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x0000001D page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000001D page=0x00000007]]]
+    [actioncommand=e60558c2-3285-4f2f-a415-d6be610a01ac name='Cycle Camera'
+      [actionblock
+        [action device=keyboard usage=0x00000049 page=0x00000007 value=0x00000001]]
+      [actionblock type=repeat
+        [action device=keyboard usage=0x00000049 page=0x00000007 value=0x00000001]]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x00000049 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000049 page=0x00000007]]]
+    [actioncommand=c835661f-e987-4f65-8202-7f538f4e56c5 name='Boost+Strafe Up'
+      [actionblock
+        [action device=keyboard usage=0x00000015 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000BB8 usage=0x000000E1 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x00000015 page=0x00000007]]]
+    [actioncommand=0f1c6848-788c-49f9-90bf-22edb49a599c name='Boost+Strafe Right'
+      [actionblock
+        [action device=keyboard usage=0x00000008 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000BB8 usage=0x000000E1 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x00000008 page=0x00000007]]]
+    [actioncommand=4e55b707-0cbd-4364-8664-c8f9c233051c name='Boost+Strafe Down'
+      [actionblock
+        [action device=keyboard usage=0x00000009 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000BB8 usage=0x000000E1 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x00000009 page=0x00000007]]]
+    [actioncommand=7b26c690-c209-4876-a1ed-a1539bc1447a name='Boost+Strafe Left'
+      [actionblock
+        [action device=keyboard usage=0x00000014 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000BB8 usage=0x000000E1 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x00000014 page=0x00000007]]]
+    [actioncommand=d6135397-fc9c-42a4-8ec3-2cd16af7283d name='Target Nearest Hostile'
+      [actionblock
+        [action device=keyboard usage=0x00000006 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000006 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=48929589-c361-49ff-87ec-484cd0475648 name='Target Cycle Hostiles Forward'
+      [actionblock
+        [action device=keyboard usage=0x00000017 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000017 page=0x00000007]]
+      [actionblock type=repeat
+        [action device=keyboard time=0x0000012C usage=0x00000017 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000017 page=0x00000007]]
+      [actionblock=macro type=release]]
+    [actioncommand=fa550863-138e-45ee-a5b0-38baf6928f9e name='Target Pin to DSM'
+      [actionblock
+        [action device=keyboard usage=0x0000000A page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000A page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=0bd1dd26-9ebd-43a5-b59b-74858343f672 name='Target Cycle All Forward'
+      [actionblock
+        [action device=keyboard usage=0x0000001C page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000001C page=0x00000007]]
+      [actionblock type=repeat
+        [action device=keyboard time=0x0000012C usage=0x0000001C page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000001C page=0x00000007]]
+      [actionblock=macro type=release]]
+    [actioncommand=bcc9a3b8-700b-4316-936f-81e4ac1b182e name='Space Brake'
+      [actionblock
+        [action device=keyboard usage=0x0000002C page=0x00000007 value=0x00000001]]]
+    [actioncommand=c0859ed4-6cd8-4ecb-a9b4-825fbfb94e0a name='Boost+Strafe Forward'
+      [actionblock
+        [action device=keyboard usage=0x0000001A page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000BB8 usage=0x000000E1 page=0x00000007]]
+      [actionblock type=repeat
+        [action device=keyboard usage=0x0000001A page=0x00000007 value=0x00000001]]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x0000001A page=0x00000007]]]
+    [actioncommand=e8505404-d363-4b77-a559-0c5cacdac33b name='Boost+Strafe Backward'
+      [actionblock
+        [action device=keyboard usage=0x00000016 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000BB8 usage=0x000000E1 page=0x00000007]]
+      [actionblock type=repeat
+        [action device=keyboard usage=0x00000016 page=0x00000007 value=0x00000001]]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x00000016 page=0x00000007]]]
+    [actioncommand=b8dc0b70-edd3-4a10-93de-baa18a1ae80c name='Cycle HUD Mode Back'
+      [actionblock
+        [action device=keyboard usage=0x00000033 page=0x00000007 value=0x00000001]]
+      [actionblock type=repeat
+        [action device=keyboard usage=0x00000033 page=0x00000007 value=0x00000001]]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x00000033 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000033 page=0x00000007]]]
+    [actioncommand=d5f81c40-5eb7-4047-a5aa-3cdff78f45fc name='Cycle HUD Mode Foward'
+      [actionblock
+        [action device=keyboard usage=0x00000034 page=0x00000007 value=0x00000001]]
+      [actionblock type=repeat
+        [action device=keyboard usage=0x00000034 page=0x00000007 value=0x00000001]]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x00000034 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000034 page=0x00000007]]]
+    [actioncommand=6259ccfe-d212-4ee0-a0d7-02608e951262 name='Cycle Radar Focus Forward'
+      [actionblock
+        [action device=keyboard usage=0x0000000D page=0x00000007 value=0x00000001]]
+      [actionblock type=repeat
+        [action device=keyboard usage=0x0000000D page=0x00000007 value=0x00000001]]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x0000000D page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000D page=0x00000007]]]
+    [actioncommand=1d835133-90fb-4a9d-a23d-c29992bade8f name='Cycle Radar Focus Back'
+      [actionblock
+        [action device=keyboard usage=0x0000000E page=0x00000007 value=0x00000001]]
+      [actionblock type=repeat
+        [action device=keyboard usage=0x0000000E page=0x00000007 value=0x00000001]]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x0000000E page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000E page=0x00000007]]]
+    [actioncommand=da5c8442-2bc8-4a06-bf8d-d250ef7d33c1 name='Decouple Toggle'
+      [actionblock
+        [action device=keyboard usage=0x00000039 page=0x00000007 value=0x00000001]]]
+    [actioncommand=babd7c6b-c3c4-46e0-acbb-c83376f6ded2 name='Cycle Countermeasures'
+      [actionblock
+        [action device=keyboard usage=0x0000001B page=0x00000007 value=0x00000001]]
+      [actionblock type=repeat
+        [action device=keyboard usage=0x0000001B page=0x00000007 value=0x00000001]]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x0000001B page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000001B page=0x00000007]]]
+    [actioncommand=5309d6f6-09df-4a4e-bca4-74e64c7863af name='Shields Equalize'
+      [actionblock
+        [action device=keyboard usage=0x000000E4 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000005D page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000005D page=0x00000007]
+        [action device=keyboard usage=0x000000E4 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=9daf7997-159d-4595-8332-4cd768472ac7 name='Zoom In'
+      [actionblock
+        [action device=mouse usage=0x00000038 page=0x00000001 value=0x00000001]]]
+    [actioncommand=6e9cc811-710e-492d-b88f-2c775141fb74 name='Zoom Out'
+      [actionblock
+        [action device=mouse usage=0x00000038 page=0x00000001 value=0x000000FF]]]
+    [actioncommand=ee6b94f7-6aa3-44b3-a502-6b329e658bae name='HUD Overview'
+      [actionblock
+        [action device=keyboard usage=0x0000003A page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000003A page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=30b1167f-625a-4c25-b6ad-eead80ceb093 name='HUD Weapons'
+      [actionblock
+        [action device=keyboard usage=0x0000003B page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000003B page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=a5eb94a1-370b-4e34-ab0d-aeaec45a45f5 name='HUD Power'
+      [actionblock
+        [action device=keyboard usage=0x0000003C page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000003C page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=d38f439b-43fd-4f20-9bc3-d8c5d8b98c1b name='HUD Shields'
+      [actionblock
+        [action device=keyboard usage=0x0000003D page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000003D page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=bf0ce9f4-3f0f-4d83-91f1-e0e19a3e1c37 name='Running Lights'
+      [actionblock
+        [action device=keyboard usage=0x00000012 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000012 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=1836e13a-b42b-44fa-9187-e70b17efbbde name='Target Cycle Hostiles Back'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000017 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000017 page=0x00000007]
+        [action device=keyboard usage=0x000000E0 page=0x00000007]]
+      [actionblock type=repeat
+        [action device=keyboard time=0x0000012C usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000017 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000017 page=0x00000007]
+        [action device=keyboard usage=0x000000E0 page=0x00000007]]
+      [actionblock=macro type=release]]
+    [actioncommand=0405aee0-0122-4614-b2d1-0a2092e3c26f name='Target Cycle All Back'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000001C page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000001C page=0x00000007]
+        [action device=keyboard usage=0x000000E0 page=0x00000007]]
+      [actionblock type=repeat
+        [action device=keyboard time=0x0000012C usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000001C page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000001C page=0x00000007]
+        [action device=keyboard usage=0x000000E0 page=0x00000007]]
+      [actionblock=macro type=release]]
+    [actioncommand=6772267a-3869-4906-bda2-007f4943c6dd name='Target Cycle Friendly Forward'
+      [actionblock
+        [action device=keyboard usage=0x0000000B page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000B page=0x00000007]]
+      [actionblock type=repeat
+        [action device=keyboard time=0x0000012C usage=0x0000000B page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000B page=0x00000007]]
+      [actionblock=macro type=release]]
+    [actioncommand=530a6f17-3b52-43af-b8c9-8fff936a6261 name='Target Cycle Friendly Back'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000B page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000B page=0x00000007]
+        [action device=keyboard usage=0x000000E0 page=0x00000007]]
+      [actionblock type=repeat
+        [action device=keyboard time=0x0000012C usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000B page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000B page=0x00000007]
+        [action device=keyboard usage=0x000000E0 page=0x00000007]]
+      [actionblock=macro type=release]]
+    [actioncommand=9346dcd5-9bae-4229-9c98-bb1e4e389330 name=Test3
+      [actionblock
+        [action device=mouse usage=0x00000003 page=0x00000009 value=0x00000001]]]
+    [actioncommand=f4ff4aa9-8b64-4230-b629-871ca4d09be0 name='Fire Group 1'
+      [actionblock
+        [action device=mouse usage=0x00000001 page=0x00000009 value=0x00000001]]]
+    [actioncommand=3b942845-38b3-4136-9af6-c10b637fedd0 name='Fire Groups 3-4'
+      [actionblock
+        [action device=mouse usage=0x00000004 page=0x00000009 value=0x00000001]
+        [action device=mouse usage=0x00000005 page=0x00000009 value=0x00000001]]]
+    [actioncommand=ec9cf433-7937-45d6-9b6e-350f299e9877 name='Lock/Fire Missile'
+      [actionblock
+        [action device=mouse usage=0x00000003 page=0x00000009 value=0x00000001]]]
+    [actioncommand=4c96c051-a1d4-47b4-a36e-f2efc6e0e5fd name='Fire Group 2'
+      [actionblock
+        [action device=mouse usage=0x00000002 page=0x00000009 value=0x00000001]]]
+    [actioncommand=59d14799-5e27-4d28-8e12-6921a96a1d0f name='Fire Groups 1-2'
+      [actionblock
+        [action device=mouse usage=0x00000001 page=0x00000009 value=0x00000001]
+        [action device=mouse usage=0x00000002 page=0x00000009 value=0x00000001]]]
+    [actioncommand=1e9f3396-5c1d-4750-890e-24802204e6de name='Strafe Up'
+      [actionblock
+        [action device=keyboard usage=0x00000015 page=0x00000007 value=0x00000001]]]
+    [actioncommand=a47bb5a4-b423-498f-9de5-d29c7351960b name='Fire Groups 2-4'
+      [actionblock
+        [action device=mouse usage=0x00000002 page=0x00000009 value=0x00000001]
+        [action device=mouse usage=0x00000004 page=0x00000009 value=0x00000001]
+        [action device=mouse usage=0x00000005 page=0x00000009 value=0x00000001]]]
+    [actioncommand=e8267256-a595-4fd3-9911-06d59bf07645 name=Afterburner/Boost
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]]]
+    [actioncommand=5267dd95-5ab2-42c6-954a-6cded03d02b1 name=Eject
+      [actionblock]
+      [actionblock type=repeat
+        [action device=keyboard time=0x000000FA usage=0x000000E6 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000F page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000F page=0x00000007]
+        [action device=keyboard usage=0x000000E6 page=0x00000007]]
+      [actionblock=macro type=release]]
+    [actioncommand=f4101278-99e6-427b-ae53-def884c868ae name='Boost+Space Brake'
+      [actionblock
+        [action device=keyboard usage=0x0000002C page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x000009C4 usage=0x000000E1 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x0000002C page=0x00000007]]]
+    [actioncommand=eccdbc49-374d-4b64-932c-dcc66f0f3e4d name='Match Target Velocity'
+      [actionblock
+        [action device=keyboard usage=0x000000E6 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000010 page=0x00000007 value=0x00000001]]]
+    [actioncommand=c93a30aa-52cb-4cb2-81a5-0ed5be81acea name='Power Group 1 +'
+      [actionblock
+        [action device=keyboard usage=0x0000001E page=0x00000007 value=0x00000001]]]
+    [actioncommand=34edddd0-6785-4e69-b9dd-51fcc419d3a2 name='Power Group 2 +'
+      [actionblock
+        [action device=keyboard usage=0x0000001F page=0x00000007 value=0x00000001]]]
+    [actioncommand=c50c149c-893e-4eff-b07f-25451c0af14f name='Power Group 3 +'
+      [actionblock
+        [action device=keyboard usage=0x00000020 page=0x00000007 value=0x00000001]]]
+    [actioncommand=381eacc6-3f7e-466c-838a-0ba750f3eb70 name='Strafe Right'
+      [actionblock
+        [action device=keyboard usage=0x00000008 page=0x00000007 value=0x00000001]]]
+    [actioncommand=3054c46d-674a-437f-a6e3-1e8e0871bef0 name='Strafe Down'
+      [actionblock
+        [action device=keyboard usage=0x00000009 page=0x00000007 value=0x00000001]]]
+    [actioncommand=4565e3dc-bea7-4443-951b-47089900d5e7 name='Strafe Left'
+      [actionblock
+        [action device=keyboard usage=0x00000014 page=0x00000007 value=0x00000001]]]
+    [actioncommand=53f5af26-1f92-4664-9f40-67cfac9f78ea name='Lock and Fire Missile (auto-macro)'
+      [actionblock=macro
+        [action device=mouse usage=0x00000003 page=0x00000009 value=0x00000001]
+        [action device=mouse usage=0x00000003 page=0x00000009]
+        [action device=mouse time=0x00000992 usage=0x00000003 page=0x00000009 value=0x00000001]
+        [action device=mouse usage=0x00000003 page=0x00000009]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=49976afe-999a-4963-aaa0-451430c6b222 name='Boost+Strafe Up/Right'
+      [actionblock
+        [action device=keyboard usage=0x00000008 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000015 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000BB8 usage=0x000000E1 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x00000008 page=0x00000007]
+        [action device=keyboard usage=0x00000015 page=0x00000007]]]
+    [actioncommand=81750717-ae19-4f36-8a66-22c0e8b69a2b name='Boost+Strafe Down/Right'
+      [actionblock
+        [action device=keyboard usage=0x00000008 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000009 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000BB8 usage=0x000000E1 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x00000008 page=0x00000007]
+        [action device=keyboard usage=0x00000009 page=0x00000007]]]
+    [actioncommand=7d4184c9-81d3-4718-8560-ea6f66c2c05e name='Boost+Strafe Down/Left'
+      [actionblock
+        [action device=keyboard usage=0x00000014 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000009 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000BB8 usage=0x000000E1 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x00000014 page=0x00000007]
+        [action device=keyboard usage=0x00000009 page=0x00000007]]]
+    [actioncommand=93969679-8fee-4397-bf97-d19e39eefc6b name='Boost+Strafe Up/Left'
+      [actionblock
+        [action device=keyboard usage=0x00000014 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000015 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000BB8 usage=0x000000E1 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x00000014 page=0x00000007]
+        [action device=keyboard usage=0x00000015 page=0x00000007]]]
+    [actioncommand=ac0a01e9-0c52-413c-ae77-caf50cbe4bec name='Strafe Up/Right'
+      [actionblock
+        [action device=keyboard usage=0x00000015 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000008 page=0x00000007 value=0x00000001]]]
+    [actioncommand=db15fbcc-c63b-42a4-a5bc-8733f2e7eec3 name='Strafe Down/Right'
+      [actionblock
+        [action device=keyboard usage=0x00000008 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000009 page=0x00000007 value=0x00000001]]]
+    [actioncommand=f586c8e0-4668-4938-a317-2adfa9b29a67 name='Strafe Down/Left'
+      [actionblock
+        [action device=keyboard usage=0x00000009 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000014 page=0x00000007 value=0x00000001]]]
+    [actioncommand=afd7d190-e791-4222-a19d-014a67520cf8 name='Strafe Up/Left'
+      [actionblock
+        [action device=keyboard usage=0x00000015 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000014 page=0x00000007 value=0x00000001]]]
+    [actioncommand=f926875a-0802-4c15-b44b-8b9fb48a477d name='Decouple - Slider'
+      [actionblock
+        [action device=keyboard usage=0x00000039 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000076 usage=0x00000039 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x00000039 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000062 usage=0x00000039 page=0x00000007]]]
+    [actioncommand=74d49677-6860-4f37-a5e1-f925430aace9 name=Ready/Respawn
+      [actionblock
+        [action device=keyboard usage=0x0000001B page=0x00000007 value=0x00000001]]]
+    [actioncommand=27d79910-68d4-48eb-baee-7f7dbb703b75 name='Mouse-look Toggle'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000006 page=0x00000007 value=0x00000001]]]
+    [actioncommand=f9064f8e-a0f4-4cd7-9626-b2397d76c9ed name='Power Equalize'
+      [actionblock
+        [action device=keyboard usage=0x00000027 page=0x00000007 value=0x00000001]]]
+    [actioncommand=9f458480-f10c-4a26-877e-242efd8a150c name=Scoreboard
+      [actionblock
+        [action device=keyboard usage=0x0000002B page=0x00000007 value=0x00000001]]]
+    [actioncommand=2750f1b6-265b-4df4-b01e-647d919478f1 name='Target Focus'
+      [actionblock
+        [action device=keyboard usage=0x0000000F page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000F page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=18024a46-0ea5-4294-9cd5-43612fec2f8a name=Safties
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000039 page=0x00000007 value=0x00000001]]]
+    [actioncommand=4cd64c6d-1ca5-47c9-a5aa-18d268bb5c2c name=ComStab
+      [actionblock
+        [action device=keyboard usage=0x00000024 page=0x00000007 value=0x00000001]]]
+    [actioncommand=a64a5451-e318-41e1-b307-2dd160fbc3a3 name='Look Ahead Toggle'
+      [actionblock
+        [action device=keyboard usage=0x000000E6 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000010 page=0x00000007 value=0x00000001]]]
+    [actioncommand=c66c8a35-eada-46f8-9d78-ca9d19276483 name='Gimbal Lock Toggle'
+      [actionblock
+        [action device=keyboard usage=0x00000013 page=0x00000007 value=0x00000001]]]
+    [actioncommand=48e7606b-e8ed-4e40-ab12-372a39a54843 name='Strafe Forward'
+      [actionblock
+        [action device=keyboard usage=0x0000001A page=0x00000007 value=0x00000001]]]
+    [actioncommand=60454ba6-f3e7-47d3-804f-a3c4798e74e1 name='Strafe Backward'
+      [actionblock
+        [action device=keyboard usage=0x00000016 page=0x00000007 value=0x00000001]]]
+    [actioncommand=e7b5feb4-d392-4f18-a802-7c9272c9932b name=Escape/Menu
+      [actionblock
+        [action device=keyboard usage=0x00000029 page=0x00000007 value=0x00000001]]]
+    [actioncommand=e6996ba0-9a35-423b-8fff-9c1a2a8eddbf name='Shields Forward'
+      [actionblock
+        [action device=keyboard usage=0x00000060 page=0x00000007 value=0x00000001]]]
+    [actioncommand=9e62a966-61b2-4edc-95bb-f53bcb920f50 name='Shields Right'
+      [actionblock
+        [action device=keyboard usage=0x0000005E page=0x00000007 value=0x00000001]]]
+    [actioncommand=18f9c1f2-3f48-47b6-a674-29e4f267fced name='Shields Back'
+      [actionblock
+        [action device=keyboard usage=0x0000005A page=0x00000007 value=0x00000001]]]
+    [actioncommand=14eaed40-e04c-4881-a958-6a56e7669d7c name='Shields Left'
+      [actionblock
+        [action device=keyboard usage=0x0000005C page=0x00000007 value=0x00000001]]]
+    [actioncommand=8618fd43-15bb-44df-86c4-39a1d7078476 name='Look/Aim Up'
+      [actionblock
+        [action device=keyboard usage=0x00000052 page=0x00000007 value=0x00000001]]]
+    [actioncommand=77bcce62-fbc2-463e-bfc9-00d7d43d57a8 name='Look/Aim Up-Right'
+      [actionblock
+        [action device=keyboard usage=0x00000052 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000004F page=0x00000007 value=0x00000001]]]
+    [actioncommand=5aa42533-b13b-4781-9276-661b932c9e52 name='Look/Aim Right'
+      [actionblock
+        [action device=keyboard usage=0x0000004F page=0x00000007 value=0x00000001]]]
+    [actioncommand=23b32fd4-675b-45c6-aa58-109bd73e0647 name='Look/Aim Down-Right'
+      [actionblock
+        [action device=keyboard usage=0x00000051 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000004F page=0x00000007 value=0x00000001]]]
+    [actioncommand=e3e4a019-5902-495a-bbe4-42f18f3be56f name='Look/Aim Down'
+      [actionblock
+        [action device=keyboard usage=0x00000051 page=0x00000007 value=0x00000001]]]
+    [actioncommand=52f418d4-62a6-47a9-9c6e-f03d576320c9 name='Look/Aim Down-Left'
+      [actionblock
+        [action device=keyboard usage=0x00000051 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000050 page=0x00000007 value=0x00000001]]]
+    [actioncommand=b343f207-eb0f-4a13-9139-858eea959f72 name='Look/Aim Left'
+      [actionblock
+        [action device=keyboard usage=0x00000050 page=0x00000007 value=0x00000001]]]
+    [actioncommand=f4018f04-254e-4c55-b248-26180a85e474 name='Look/Aim Left-Up'
+      [actionblock
+        [action device=keyboard usage=0x00000050 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000052 page=0x00000007 value=0x00000001]]]
+    [actioncommand=dc2dafd0-b2ba-4ddc-b5ee-cb4cf6df6272 name='Target Reticle'
+      [actionblock
+        [action device=keyboard usage=0x00000019 page=0x00000007 value=0x00000001]]]
+    [actioncommand=9a53d189-4d9d-422f-9c18-eb2abfabe948 name='Center Tacking'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000042 page=0x00000007 value=0x00000001]]]
+    [actioncommand=49ee6820-33b8-4062-ad9b-64ec765befb5 name='Pause/Resume Tracking'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000043 page=0x00000007 value=0x00000001]]]
+    [actioncommand=a38be9a5-b5c7-4c67-bd0b-c3839e949697 name='Eject/Self Destruct'
+      [actionblock
+        [action device=keyboard usage=0x000000E6 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000002A page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000002A page=0x00000007]
+        [action device=keyboard usage=0x000000E6 page=0x00000007]]
+      [actionblock type=repeat
+        [action device=keyboard time=0x000001F4 usage=0x000000E6 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000F page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000F page=0x00000007]
+        [action device=keyboard usage=0x000000E6 page=0x00000007]]
+      [actionblock=macro type=release]]
+    [actioncommand=e50b23a7-7e8d-4e13-838f-9c309802905f name='HUD Interact'
+      [actionblock
+        [action device=keyboard usage=0x0000004A page=0x00000007 value=0x00000001]]]
+    [actioncommand=5aa3ba28-5284-4de3-b03f-fd6a09224081 name='HUD Navigate Up'
+      [actionblock
+        [action device=keyboard usage=0x00000052 page=0x00000007 value=0x00000001]]]
+    [actioncommand=4a1c4829-5346-40bd-b9c5-c9c9524359dd name='HUD Navigate Right'
+      [actionblock
+        [action device=keyboard usage=0x0000004F page=0x00000007 value=0x00000001]]]
+    [actioncommand=ecb2f314-7499-4044-9140-f1280bf62577 name='HUD Navigate Down'
+      [actionblock
+        [action device=keyboard usage=0x00000051 page=0x00000007 value=0x00000001]]]
+    [actioncommand=05d4c3c3-213f-48d6-9517-49b46140d753 name='HUD Navigate Left'
+      [actionblock
+        [action device=keyboard usage=0x00000050 page=0x00000007 value=0x00000001]]]
+    [actioncommand=c0aa69e5-7c1e-45cf-92a4-d33c3a28315d name='HUD Select'
+      [actionblock
+        [action device=keyboard usage=0x00000028 page=0x00000007 value=0x00000001]]]
+    [actioncommand=8aa7d953-f972-47b8-839f-a89119b90f08 name='Cycle Countermeasures'
+      [actionblock
+        [action device=keyboard usage=0x0000001B page=0x00000007 value=0x00000001]]]
+    [actioncommand=c53009b7-f8b9-4d97-ad87-7f05da926f69 name='Fire Countermeasures'
+      [actionblock
+        [action device=keyboard usage=0x0000001D page=0x00000007 value=0x00000001]]]
+    [actioncommand=c67df79f-38fe-4ca2-99db-4180ed7edc72 name='Landing-Weapons Mode Toggle'
+      [actionblock
+        [action device=keyboard usage=0x00000011 page=0x00000007 value=0x00000001]]]
+    [actioncommand=4a5ecb42-da9d-450f-8c55-827f1f0b8c69 name='Landing Permission Request'
+      [actionblock
+        [action device=mouse usage=0x00000003 page=0x00000009 value=0x00000001]]]
+    [actioncommand=ec26b7dd-506c-4fab-a93e-98ad180732d0 name='Landing Automatic/Manual Toggle'
+      [actionblock
+        [action device=keyboard usage=0x00000010 page=0x00000007 value=0x00000001]]]
+    [actioncommand=b8d00af1-a62b-4fd1-8079-81d7ce8f3abd name='Exit Seat'
+      [actionblock
+        [action device=keyboard usage=0x000000E6 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000009 page=0x00000007 value=0x00000001]]]
+    [actioncommand=4ac4e516-4de3-495d-bca7-e8d80e5c5702 name='Push to Talk'
+      [actionblock
+        [action device=mouse usage=0x00000005 page=0x00000009 value=0x00000001]]]
+    [actioncommand=4805f9f6-3ff9-4467-a429-9ad7140a8c7a name='Power Combat'
+      [actionblock=macro
+        [action device=keyboard usage=0x00000027 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000064 usage=0x00000027 page=0x00000007]
+        [action device=keyboard time=0x00000064 usage=0x0000001E page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000190 usage=0x0000001E page=0x00000007]
+        [action device=keyboard time=0x00000064 usage=0x00000020 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x000000FA usage=0x00000020 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=b60ef9d3-9342-4882-bc42-76b9ff3959d0 name='Power Shields'
+      [actionblock
+        [action device=keyboard usage=0x0000001F page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x000000C8 usage=0x0000001F page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=adda3422-ae52-450c-936b-c74480b9f226 name='Power Weapons'
+      [actionblock
+        [action device=keyboard usage=0x0000001E page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x000000C8 usage=0x0000001E page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=3779892b-8db2-4d99-aaad-3dbe9abd9ad7 name='Power Engines'
+      [actionblock
+        [action device=keyboard usage=0x00000020 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x000000C8 usage=0x00000020 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=5cc541db-845b-4b09-93b5-4ac1c109345b name='Fire Group 3'
+      [actionblock
+        [action device=mouse usage=0x00000004 page=0x00000009 value=0x00000001]]]
+    [actioncommand=a9b39029-597f-4126-8e40-56b00633286d name='Fire Group 4'
+      [actionblock
+        [action device=mouse usage=0x00000005 page=0x00000009 value=0x00000001]]]
+    [actioncommand=8813714c-d37d-4bb4-877c-d20cfcde66a0 name='Look Ahead Toggle'
+      [actionblock]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=05eb7576-b383-4aec-8b18-31b898c8f237 name='Cabin Lights'
+      [actionblock
+        [action device=keyboard usage=0x000000E6 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000012 page=0x00000007 value=0x00000001]]]
+    [actioncommand=9e06c962-7841-483e-ae24-0251d6e3ee17 name='Decouple Hold'
+      [actionblock
+        [action device=keyboard usage=0x00000039 page=0x00000007 value=0x00000001]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x00000039 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000068 usage=0x00000039 page=0x00000007]]]
+    [actioncommand=d4d637d1-71ff-44a7-8a35-7f05dd0d8a4a name='Engine Off'
+      [actionblock
+        [action device=keyboard usage=0x00000023 page=0x00000007 value=0x00000001]]]
+    [actioncommand=74a3fc8a-1aa1-4ac9-97fd-0ee6d6295614 name='Decouple Hold'
+      [actionblock
+        [action device=keyboard usage=0x00000039 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000039 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x00000039 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000039 page=0x00000007]]]
+    [actioncommand=7f53786f-1a89-4aad-962b-140125549673 name='Decouple Toggle'
+      [actionblock
+        [action device=keyboard usage=0x00000039 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x000000C8 usage=0x00000039 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]]]
